@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 09</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            height: 150px;
+            background-color: red;
+        }
+
+        nav {
+            background-color: olive;
+            padding: 20px;
+        }
+
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            margin-right: 20px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        main section {
+            box-sizing: border-box;
+            padding: 20px;
+            width: 65%;
+        }
+
+        section h1 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        section .flex {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #CCC;
+            margin-top: 20px;
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        section iframe {
+            width: 100%;
+            margin-bottom: 20px;
+            border: none;
+        }
+
+        section a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section button {
+            background-color: red;
+            color: white;
+            border: none;
+            font-weight: bold;
+            padding: 0 10px;
+            cursor: pointer;
+        }
+
+        main aside {
+            box-sizing: border-box;
+            padding: 20px;
+            width: 35%;
+            font-size: 14px;
+        }
+
+        aside a {
+            display: flex;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        aside a:hover {
+            background-color: orange;
+        }
+
+        aside h2 {
+            font-size: 16px;
+        }
+
+        aside span {
+            display: block;
+        }
+
+        aside .caja {
+            padding-left: 10px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer iframe {
+            display: block;
+            margin: 0 auto 20px;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">VIDEOS</a>
+        <a href="#">CONTACTO</a>
+    </nav>
+    <main>
+        <section>
+            <!-- <iframe src="clase08.html" name="marco"></iframe>
+            <a href="https://www.educacionit.com" target="marco">EducacionIT</a> -->
+            
+            <!-- Compartir -> Incorporar -> COPIAR -->
+
+
+            <!--
+                https://www.youtube.com/watch?v=kN1XP-Bef7w
+
+                reemplazar watch?v= por embed/
+
+                https://www.youtube.com/embed/kN1XP-Bef7w
+            -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kN1XP-Bef7w" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen name="marco"></iframe>
+
+            <h1>Curso de HTML5 desde CERO (Completo)</h1>
+            <p>1,933,613 views Dec 15, 2019</p>
+
+            <div class="flex">
+                <div>
+                    <a href="https://www.youtube.com/channel/UCtoo4_P6ilCj7jwa4FmA5lQ" target="_blank">Soy Dalto</a>
+                    <span>363K subscribers</span>
+                </div>
+                
+
+                <button>SUSCRIBIRME</button>
+            </div>
+
+            <p>¿Queres hacer una página web con HTML, CSS y JavaScript? 
+            Este es el curso de HTML desde cero que vas a terminar, te prometo que no te vas a aburrir durante el aprendizaje de este gran tutorial de HTML5 Actualizado 2021.</p>
+        </section>
+        <aside>
+            <a href="https://www.youtube.com/embed/OWKXEJN67FE" target="marco">
+                <div>
+                    <img src="https://i.ytimg.com/vi/OWKXEJN67FE/hqdefault.jpg?sqp=-oaymwEWCKgBEF5IWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLC_LXWSX9LSejUMs90ahCvVYaxYTQ" alt="Curso de CSS desde CERO">
+                </div>
+                <div class="caja">
+                    <h2>Curso de CSS desde CERO (Completo)</h2>
+                    <span>Soy Dalto</span>
+                    <span>1,7M views</span>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/embed/z95mZVUcJ-E" target="marco">
+                <div>
+                    <img src="https://i.ytimg.com/vi/z95mZVUcJ-E/hqdefault.jpg?sqp=-oaymwEWCKgBEF5IWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLAhrqCQx3XJdYVRbBG2iXMiFsxYKg" alt="Curso de JAVASCRIPT">
+                </div>
+                <div class="caja">
+                    <h2>Curso de JAVASCRIPT desde CERO (Completo) - Nivel JUNIOR</h2>
+                    <span>Soy Dalto</span>
+                    <span>1,6M views</span>
+                </div>
+            </a>
+        </aside>
+    </main>
+    <footer>
+        <!-- Compartir -> Insertar un mapa -> COPIAR HTML -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.279745184207!2d-58.3759361!3d-34.602393!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x568d6d5f7f1f535d!2sEducaci%C3%B3nIT!5e0!3m2!1ses!2sar!4v1644451660179!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        Todos los derechos reservados &reg; 2022
+    </footer>
+</body>
+</html>
